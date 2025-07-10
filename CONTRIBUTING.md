@@ -21,14 +21,31 @@ We welcome several types of contributions:
 
 ```bash
 # Fork the repository on GitHub, then clone your fork
-git clone https://github.com/your-username/playwright-gis-framework.git
-cd playwright-gis-framework
+git clone https://github.com/your-username/leaflet-gis-web-app.git
+cd leaflet-gis-web-app
 
 # Add upstream remote
-git remote add upstream https://github.com/original-repo/playwright-gis-framework.git
+git remote add upstream https://github.com/abport/leaflet-gis-web-app.git
 ```
 
 ### 2. Set Up Development Environment
+
+#### Steps to Run the GIS Web App Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/abport/leaflet-gis-web-app.git
+   ```
+
+2. **Navigate into the project directory:**
+   ```bash
+   cd leaflet-gis-web-app
+   ```
+
+3. **Open the index.html file in your browser.**
+   Use path to index.html as your BASE_URL
+
+#### Setup Test Framework
 
 ```bash
 # Install dependencies

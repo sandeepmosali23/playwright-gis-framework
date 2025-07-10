@@ -21,6 +21,23 @@ This comprehensive user guide will help you get started with the Playwright GIS 
 
 ### Initial Setup
 
+#### Steps to Run the GIS Web App Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/abport/leaflet-gis-web-app.git
+   ```
+
+2. **Navigate into the project directory:**
+   ```bash
+   cd leaflet-gis-web-app
+   ```
+
+3. **Open the index.html file in your browser.**
+   Use path to index.html as your BASE_URL
+
+#### Setup Test Framework
+
 1. **Install Dependencies**
 
    ```bash

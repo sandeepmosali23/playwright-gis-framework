@@ -23,10 +23,27 @@ A comprehensive, enterprise-grade Playwright test automation framework specifica
 
 ### Installation
 
+#### Steps to Run the GIS Web App Locally
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/abport/leaflet-gis-web-app.git
+   ```
+
+2. **Navigate into the project directory:**
+   ```bash
+   cd leaflet-gis-web-app
+   ```
+
+3. **Open the index.html file in your browser.**
+   Use path to index.html as your BASE_URL
+
+#### Setup Test Framework
+
 ```bash
-# Clone the repository
-git clone <repository-url>
-cd playwright-gis-framework
+# Clone the test framework repository
+git clone https://github.com/abport/leaflet-gis-web-app.git
+cd leaflet-gis-web-app
 
 # Install dependencies
 npm install
