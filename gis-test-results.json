@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/Users/sandeepreddy/untitled folder/demo-playwright/playwright.config.ts",
-    "rootDir": "/Users/sandeepreddy/untitled folder/demo-playwright/tests",
+    "configFile": "/Users/sandeepreddy/playwright-gis-framework/playwright.config.ts",
+    "rootDir": "/Users/sandeepreddy/playwright-gis-framework/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,12 +11,18 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
-      ["html", null],
-      ["list", null],
+      [
+        "html",
+        null
+      ],
+      [
+        "list",
+        null
+      ],
       [
         "json",
         {
@@ -31,31 +37,35 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/Users/sandeepreddy/untitled folder/demo-playwright/test-results",
+        "outputDir": "/Users/sandeepreddy/playwright-gis-framework/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/Users/sandeepreddy/untitled folder/demo-playwright/tests",
+        "testDir": "/Users/sandeepreddy/playwright-gis-framework/tests",
         "testIgnore": [],
-        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
         "timeout": 30000
       },
       {
-        "outputDir": "/Users/sandeepreddy/untitled folder/demo-playwright/test-results",
+        "outputDir": "/Users/sandeepreddy/playwright-gis-framework/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 2,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 1
         },
         "id": "firefox",
         "name": "firefox",
-        "testDir": "/Users/sandeepreddy/untitled folder/demo-playwright/tests",
+        "testDir": "/Users/sandeepreddy/playwright-gis-framework/tests",
         "testIgnore": [],
-        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
         "timeout": 30000
       }
     ],
@@ -63,10 +73,1405 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.53.2",
-    "workers": 6,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
+    {
+      "title": "gis-comprehensive.spec.ts",
+      "file": "gis-comprehensive.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "GIS Tests",
+          "file": "gis-comprehensive.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "✅ should load GIS application successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 867,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[09:59:25] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🗺️ Testing GIS app loading...\n"
+                        },
+                        {
+                          "text": "✅ Page title verified\n"
+                        },
+                        {
+                          "text": "✅ Map container is visible\n"
+                        },
+                        {
+                          "text": "✅ Navigation controls verified\n"
+                        },
+                        {
+                          "text": "✅ Project management buttons found\n"
+                        },
+                        {
+                          "text": "📊 Layer tools visible - Point: true, Line: true, Polygon: true\n"
+                        },
+                        {
+                          "text": "🎉 GIS application loaded successfully!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-10T09:59:24.335Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-2657237a13bfc2fe3262",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "✅ should handle zoom operations perfectly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1455,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[09:59:25] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🔍 Testing zoom operations...\n"
+                        },
+                        {
+                          "text": "📊 Initial zoom level: 2\n"
+                        },
+                        {
+                          "text": "[09:59:26] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m2\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "🔍 After zoom in: 4\n"
+                        },
+                        {
+                          "text": "[09:59:26] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "🔍 After zoom out: 3\n"
+                        },
+                        {
+                          "text": "✅ Zoom operations working perfectly!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-10T09:59:25.655Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-c29d0c2ba113b1e7128e",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "✅ should validate coordinates and map state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 544,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[09:59:27] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "📍 Testing coordinate validation and map state...\n"
+                        },
+                        {
+                          "text": "📍 Current map center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "✅ Map coordinates are valid\n"
+                        },
+                        {
+                          "text": "✅ Coordinate validation helper working\n"
+                        },
+                        {
+                          "text": "✅ Map bounds are valid: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
+                        },
+                        {
+                          "text": "✅ Map bounds are geographically valid\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "❌ Invalid latitude: 91 (must be -90 to 90)\n"
+                        },
+                        {
+                          "text": "❌ Invalid longitude: 181 (must be -180 to 180)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-07-10T09:59:27.115Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-cf280024e2a8142b982e",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "✅ should manage projects with intelligent state handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16328,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[09:59:28] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🛠️ Testing intelligent project and layer management...\n"
+                        },
+                        {
+                          "text": "📊 Initial button states: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
+                        },
+                        {
+                          "text": "📁 Creating new project to enable layer tools...\n"
+                        },
+                        {
+                          "text": "[09:59:43] [INFO] ℹ️  📁 Project operation: Project created \n"
+                        },
+                        {
+                          "text": "✅ New project created\n"
+                        },
+                        {
+                          "text": "📊 After project creation: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
+                        },
+                        {
+                          "text": "ℹ️ Point layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "ℹ️ Line layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "ℹ️ Polygon layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "✅ Project and layer management completed successfully!\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "[09:59:43] [WARN] ⚠️  Project create operation may not have completed as expected \n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-07-10T09:59:27.665Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-d11c13f2bbaa702e4269",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 94,
+              "column": 7
+            },
+            {
+              "title": "✅ should handle map interactions gracefully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3772,
+                      "error": {
+                        "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.",
+                        "stack": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\n    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7",
+                        "location": {
+                          "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                          "column": 21,
+                          "line": 267
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                            "column": 21,
+                            "line": 267
+                          },
+                          "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n\n\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\u001b[22m\n\u001b[2m    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[09:59:44] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🗺️ Testing map interactions with fallback verification...\n"
+                        },
+                        {
+                          "text": "📍 Initial center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "🖱️ Attempting map pan interaction...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-10T09:59:43.999Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-chromium/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-chromium/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-chromium/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                        "column": 21,
+                        "line": 267
+                      }
+                    },
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4153,
+                      "error": {
+                        "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.",
+                        "stack": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\n    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7",
+                        "location": {
+                          "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                          "column": 21,
+                          "line": 267
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                            "column": 21,
+                            "line": 267
+                          },
+                          "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n\n\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\u001b[22m\n\u001b[2m    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[09:59:49] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🗺️ Testing map interactions with fallback verification...\n"
+                        },
+                        {
+                          "text": "📍 Initial center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "🖱️ Attempting map pan interaction...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-07-10T09:59:48.744Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-chromium-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-chromium-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-chromium-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-chromium-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                        "column": 21,
+                        "line": 267
+                      }
+                    },
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 3788,
+                      "error": {
+                        "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.",
+                        "stack": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\n    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7",
+                        "location": {
+                          "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                          "column": 21,
+                          "line": 267
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                            "column": 21,
+                            "line": 267
+                          },
+                          "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n\n\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\u001b[22m\n\u001b[2m    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[09:59:54] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🗺️ Testing map interactions with fallback verification...\n"
+                        },
+                        {
+                          "text": "📍 Initial center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "🖱️ Attempting map pan interaction...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-07-10T09:59:53.917Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-chromium-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-chromium-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-chromium-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                        "column": 21,
+                        "line": 267
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-131347e9071522fbec91",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 159,
+              "column": 7
+            },
+            {
+              "title": "✅ should demonstrate mathematical precision",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 702,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[09:59:59] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "📏 Testing mathematical calculations with precision...\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 4129.09 km\n"
+                        },
+                        {
+                          "text": "📏 San Francisco → New York:\n"
+                        },
+                        {
+                          "text": "   Distance: 4129.09 km (Transcontinental distance)\n"
+                        },
+                        {
+                          "text": "   Expected range: 4100-4200 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 343.56 km\n"
+                        },
+                        {
+                          "text": "📏 London → Paris:\n"
+                        },
+                        {
+                          "text": "   Distance: 343.56 km (European city pair)\n"
+                        },
+                        {
+                          "text": "   Expected range: 340-350 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 111.19 km\n"
+                        },
+                        {
+                          "text": "📏 Equator/Prime Meridian → 1° North:\n"
+                        },
+                        {
+                          "text": "   Distance: 111.19 km (1 degree latitude)\n"
+                        },
+                        {
+                          "text": "   Expected range: 110-112 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "✅ All mathematical calculations verified with precision!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-10T09:59:58.572Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-1c2f42b06349f82765d0",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 220,
+              "column": 7
+            },
+            {
+              "title": "✅ should showcase comprehensive GIS capabilities",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 565,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[09:59:59] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🧰 Demonstrating comprehensive GIS helper capabilities...\n"
+                        },
+                        {
+                          "text": "📊 Current map state:\n"
+                        },
+                        {
+                          "text": "🗺️ Current Map State:\n"
+                        },
+                        {
+                          "text": "   Center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "   Zoom: 2\n"
+                        },
+                        {
+                          "text": "   Bounds: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
+                        },
+                        {
+                          "text": "✅ Map is ready for interactions\n"
+                        },
+                        {
+                          "text": "✅ Map readiness confirmed\n"
+                        },
+                        {
+                          "text": "🔍 Verifying map controls...\n"
+                        },
+                        {
+                          "text": "✅ Essential map controls are present\n"
+                        },
+                        {
+                          "text": "✅ Essential map controls verified\n"
+                        },
+                        {
+                          "text": "📐 Current viewport information:\n"
+                        },
+                        {
+                          "text": "   Center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "   Zoom level: 2\n"
+                        },
+                        {
+                          "text": "   Bounds: N:71.965 S:-71.965 E:145.898 W:-145.547\n"
+                        },
+                        {
+                          "text": "📍 Formatted coordinates: 37.774929, -122.419415\n"
+                        },
+                        {
+                          "text": "✅ Coordinate formatting working correctly\n"
+                        },
+                        {
+                          "text": "🧭 Bearing from San Francisco to New York: 69.9°\n"
+                        },
+                        {
+                          "text": "✅ Bearing calculation verified\n"
+                        },
+                        {
+                          "text": "✅ Center coordinate confirmed to be in current view\n"
+                        },
+                        {
+                          "text": "🔍 North Pole region in current view: false\n"
+                        },
+                        {
+                          "text": "🧪 Testing edge case coordinates:\n"
+                        },
+                        {
+                          "text": "   ✅ North Pole: (90, 0) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ South Pole: (-90, 0) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ Antimeridian: (0, 180) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ Beyond North Pole: (90.1, 0) - Valid: false\n"
+                        },
+                        {
+                          "text": "🎉 All comprehensive GIS capabilities demonstrated successfully!\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "❌ Invalid latitude: 90.1 (must be -90 to 90)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-07-10T09:59:59.476Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-2d7480593d0d0907f939",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 273,
+              "column": 7
+            },
+            {
+              "title": "✅ should load GIS application successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2716,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[10:00:47] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🗺️ Testing GIS app loading...\n"
+                        },
+                        {
+                          "text": "✅ Page title verified\n"
+                        },
+                        {
+                          "text": "✅ Map container is visible\n"
+                        },
+                        {
+                          "text": "✅ Navigation controls verified\n"
+                        },
+                        {
+                          "text": "✅ Project management buttons found\n"
+                        },
+                        {
+                          "text": "📊 Layer tools visible - Point: true, Line: true, Polygon: true\n"
+                        },
+                        {
+                          "text": "🎉 GIS application loaded successfully!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-10T10:00:44.003Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-ced31a58650a55243273",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "✅ should handle zoom operations perfectly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2375,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[10:00:49] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🔍 Testing zoom operations...\n"
+                        },
+                        {
+                          "text": "📊 Initial zoom level: 2\n"
+                        },
+                        {
+                          "text": "[10:00:49] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m2\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "🔍 After zoom in: 4\n"
+                        },
+                        {
+                          "text": "[10:00:50] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "🔍 After zoom out: 3\n"
+                        },
+                        {
+                          "text": "✅ Zoom operations working perfectly!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-10T10:00:48.005Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-053b06532477152a4420",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "✅ should validate coordinates and map state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1245,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[10:00:51] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "📍 Testing coordinate validation and map state...\n"
+                        },
+                        {
+                          "text": "📍 Current map center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "✅ Map coordinates are valid\n"
+                        },
+                        {
+                          "text": "✅ Coordinate validation helper working\n"
+                        },
+                        {
+                          "text": "✅ Map bounds are valid: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
+                        },
+                        {
+                          "text": "✅ Map bounds are geographically valid\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "❌ Invalid latitude: 91 (must be -90 to 90)\n"
+                        },
+                        {
+                          "text": "❌ Invalid longitude: 181 (must be -180 to 180)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-07-10T10:00:50.386Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-a31c9958eee1cd2cc51f",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "✅ should manage projects with intelligent state handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16398,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[10:00:52] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🛠️ Testing intelligent project and layer management...\n"
+                        },
+                        {
+                          "text": "📊 Initial button states: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
+                        },
+                        {
+                          "text": "📁 Creating new project to enable layer tools...\n"
+                        },
+                        {
+                          "text": "[10:01:07] [INFO] ℹ️  📁 Project operation: Project created \n"
+                        },
+                        {
+                          "text": "✅ New project created\n"
+                        },
+                        {
+                          "text": "📊 After project creation: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
+                        },
+                        {
+                          "text": "ℹ️ Point layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "ℹ️ Line layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "ℹ️ Polygon layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "✅ Project and layer management completed successfully!\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "[10:01:07] [WARN] ⚠️  Project create operation may not have completed as expected \n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-07-10T10:00:51.637Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-69dff2d7913a1433a8d7",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 94,
+              "column": 7
+            },
+            {
+              "title": "✅ should handle map interactions gracefully",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 4431,
+                      "error": {
+                        "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.",
+                        "stack": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\n    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7",
+                        "location": {
+                          "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                          "column": 21,
+                          "line": 267
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                            "column": 21,
+                            "line": 267
+                          },
+                          "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n\n\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\u001b[22m\n\u001b[2m    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[10:01:09] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🗺️ Testing map interactions with fallback verification...\n"
+                        },
+                        {
+                          "text": "📍 Initial center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "🖱️ Attempting map pan interaction...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-10T10:01:08.041Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                        "column": 21,
+                        "line": 267
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5679,
+                      "error": {
+                        "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.",
+                        "stack": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\n    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7",
+                        "location": {
+                          "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                          "column": 21,
+                          "line": 267
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                            "column": 21,
+                            "line": 267
+                          },
+                          "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n\n\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\u001b[22m\n\u001b[2m    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[10:01:17] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🗺️ Testing map interactions with fallback verification...\n"
+                        },
+                        {
+                          "text": "📍 Initial center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "🖱️ Attempting map pan interaction...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2025-07-10T10:01:13.834Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-firefox-retry1/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-firefox-retry1/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-firefox-retry1/error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-firefox-retry1/trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                        "column": 21,
+                        "line": 267
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 5351,
+                      "error": {
+                        "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.",
+                        "stack": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\n    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7",
+                        "location": {
+                          "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                          "column": 21,
+                          "line": 267
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                            "column": 21,
+                            "line": 267
+                          },
+                          "message": "TimeoutError: page.waitForFunction: Timeout 3000ms exceeded.\n\n\u001b[90m   at \u001b[39m../pages/gis-map-page.ts:267\n\n\u001b[0m \u001b[90m 265 |\u001b[39m\n \u001b[90m 266 |\u001b[39m     \u001b[90m// Wait for pan operation to complete\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 267 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForFunction(\n \u001b[90m     |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 268 |\u001b[39m       args \u001b[33m=>\u001b[39m {\n \u001b[90m 269 |\u001b[39m         \u001b[36mconst\u001b[39m map \u001b[33m=\u001b[39m (window \u001b[36mas\u001b[39m any)\u001b[33m.\u001b[39mmap\u001b[33m;\u001b[39m\n \u001b[90m 270 |\u001b[39m         \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mmap) \u001b[36mreturn\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at GISMapPage.dragMap (/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts:267:21)\u001b[22m\n\u001b[2m    at /Users/sandeepreddy/playwright-gis-framework/tests/gis-comprehensive.spec.ts:175:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "[10:01:25] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🗺️ Testing map interactions with fallback verification...\n"
+                        },
+                        {
+                          "text": "📍 Initial center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "🖱️ Attempting map pan interaction...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 2,
+                      "startTime": "2025-07-10T10:01:22.226Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-firefox-retry2/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-firefox-retry2/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/Users/sandeepreddy/playwright-gis-framework/test-results/gis-comprehensive-GIS-Test-3e919-map-interactions-gracefully-firefox-retry2/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/Users/sandeepreddy/playwright-gis-framework/pages/gis-map-page.ts",
+                        "column": 21,
+                        "line": 267
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-9a042de0997464acb22b",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 159,
+              "column": 7
+            },
+            {
+              "title": "✅ should demonstrate mathematical precision",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2192,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[10:01:33] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "📏 Testing mathematical calculations with precision...\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 4129.09 km\n"
+                        },
+                        {
+                          "text": "📏 San Francisco → New York:\n"
+                        },
+                        {
+                          "text": "   Distance: 4129.09 km (Transcontinental distance)\n"
+                        },
+                        {
+                          "text": "   Expected range: 4100-4200 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 343.56 km\n"
+                        },
+                        {
+                          "text": "📏 London → Paris:\n"
+                        },
+                        {
+                          "text": "   Distance: 343.56 km (European city pair)\n"
+                        },
+                        {
+                          "text": "   Expected range: 340-350 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 111.19 km\n"
+                        },
+                        {
+                          "text": "📏 Equator/Prime Meridian → 1° North:\n"
+                        },
+                        {
+                          "text": "   Distance: 111.19 km (1 degree latitude)\n"
+                        },
+                        {
+                          "text": "   Expected range: 110-112 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "✅ All mathematical calculations verified with precision!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-10T10:01:30.366Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-e9856ed3b9ba8639853c",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 220,
+              "column": 7
+            },
+            {
+              "title": "✅ should showcase comprehensive GIS capabilities",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1276,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "[10:01:34] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "🧰 Demonstrating comprehensive GIS helper capabilities...\n"
+                        },
+                        {
+                          "text": "📊 Current map state:\n"
+                        },
+                        {
+                          "text": "🗺️ Current Map State:\n"
+                        },
+                        {
+                          "text": "   Center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "   Zoom: 2\n"
+                        },
+                        {
+                          "text": "   Bounds: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
+                        },
+                        {
+                          "text": "✅ Map is ready for interactions\n"
+                        },
+                        {
+                          "text": "✅ Map readiness confirmed\n"
+                        },
+                        {
+                          "text": "🔍 Verifying map controls...\n"
+                        },
+                        {
+                          "text": "✅ Essential map controls are present\n"
+                        },
+                        {
+                          "text": "✅ Essential map controls verified\n"
+                        },
+                        {
+                          "text": "📐 Current viewport information:\n"
+                        },
+                        {
+                          "text": "   Center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "   Zoom level: 2\n"
+                        },
+                        {
+                          "text": "   Bounds: N:71.965 S:-71.965 E:145.898 W:-145.547\n"
+                        },
+                        {
+                          "text": "📍 Formatted coordinates: 37.774929, -122.419415\n"
+                        },
+                        {
+                          "text": "✅ Coordinate formatting working correctly\n"
+                        },
+                        {
+                          "text": "🧭 Bearing from San Francisco to New York: 69.9°\n"
+                        },
+                        {
+                          "text": "✅ Bearing calculation verified\n"
+                        },
+                        {
+                          "text": "✅ Center coordinate confirmed to be in current view\n"
+                        },
+                        {
+                          "text": "🔍 North Pole region in current view: false\n"
+                        },
+                        {
+                          "text": "🧪 Testing edge case coordinates:\n"
+                        },
+                        {
+                          "text": "   ✅ North Pole: (90, 0) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ South Pole: (-90, 0) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ Antimeridian: (0, 180) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ Beyond North Pole: (90.1, 0) - Valid: false\n"
+                        },
+                        {
+                          "text": "🎉 All comprehensive GIS capabilities demonstrated successfully!\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "❌ Invalid latitude: 90.1 (must be -90 to 90)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-07-10T10:01:33.774Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b9b35f4ae7f80fdfa871-76df62333a1a92f5c155",
+              "file": "gis-comprehensive.spec.ts",
+              "line": 273,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
     {
       "title": "layer-management.spec.ts",
       "file": "layer-management.spec.ts",
@@ -93,15 +1498,19 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4254,
+                      "duration": 588,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "[10:00:00] [INFO] ℹ️  Map is ready for interactions \n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:05.680Z",
+                      "startTime": "2025-07-10T10:00:00.051Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -127,15 +1536,19 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8487,
+                      "duration": 833,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "[10:00:00] [INFO] ℹ️  Map is ready for interactions \n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:05.820Z",
+                      "startTime": "2025-07-10T10:00:00.644Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -161,15 +1574,19 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8617,
+                      "duration": 604,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "[10:00:01] [INFO] ℹ️  Map is ready for interactions \n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:05.898Z",
+                      "startTime": "2025-07-10T10:00:01.481Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -196,13 +1613,19 @@
                   "results": [
                     {
                       "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6432,
+                      "duration": 16172,
                       "errors": [],
                       "stdout": [
                         {
+                          "text": "[10:00:02] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
                           "text": "📁 Creating new project to enable layer creation...\n"
+                        },
+                        {
+                          "text": "[10:00:17] [INFO] ℹ️  📁 Project operation: Project created \n"
                         },
                         {
                           "text": "📊 Layer button states after project creation: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
@@ -217,9 +1640,13 @@
                           "text": "ℹ️ Polygon layer button still disabled - skipping\n"
                         }
                       ],
-                      "stderr": [],
+                      "stderr": [
+                        {
+                          "text": "[10:00:17] [WARN] ⚠️  Project create operation may not have completed as expected \n"
+                        }
+                      ],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:05.727Z",
+                      "startTime": "2025-07-10T10:00:02.088Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -229,7 +1656,7 @@
               ],
               "id": "2d5be681a50294a7201f-7d02a037fd2e0c0828ae",
               "file": "layer-management.spec.ts",
-              "line": 50,
+              "line": 47,
               "column": 7
             },
             {
@@ -245,15 +1672,19 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5677,
+                      "duration": 1172,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "[10:01:36] [INFO] ℹ️  Map is ready for interactions \n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:23.888Z",
+                      "startTime": "2025-07-10T10:01:35.062Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -280,14 +1711,18 @@
                   "results": [
                     {
                       "workerIndex": 7,
-                      "parallelIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11146,
+                      "duration": 1585,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "[10:01:37] [INFO] ℹ️  Map is ready for interactions \n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:24.249Z",
+                      "startTime": "2025-07-10T10:01:36.239Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -313,15 +1748,19 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 5,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 10462,
+                      "duration": 1330,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "[10:01:38] [INFO] ℹ️  Map is ready for interactions \n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:24.456Z",
+                      "startTime": "2025-07-10T10:01:37.829Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -347,14 +1786,20 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 3,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9362,
+                      "duration": 16497,
                       "errors": [],
                       "stdout": [
                         {
+                          "text": "[10:01:40] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
                           "text": "📁 Creating new project to enable layer creation...\n"
+                        },
+                        {
+                          "text": "[10:01:55] [INFO] ℹ️  📁 Project operation: Project created \n"
                         },
                         {
                           "text": "📊 Layer button states after project creation: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
@@ -369,9 +1814,13 @@
                           "text": "ℹ️ Polygon layer button still disabled - skipping\n"
                         }
                       ],
-                      "stderr": [],
+                      "stderr": [
+                        {
+                          "text": "[10:01:55] [WARN] ⚠️  Project create operation may not have completed as expected \n"
+                        }
+                      ],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:25.582Z",
+                      "startTime": "2025-07-10T10:01:39.164Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -381,7 +1830,7 @@
               ],
               "id": "2d5be681a50294a7201f-1ea12f763e7ff6f3c28d",
               "file": "layer-management.spec.ts",
-              "line": 50,
+              "line": 47,
               "column": 7
             }
           ]
@@ -414,14 +1863,20 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6755,
+                      "duration": 960,
                       "errors": [],
                       "stdout": [
                         {
+                          "text": "[10:00:18] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
                           "text": "ℹ️ Map may have pan constraints - verifying responsiveness\n"
+                        },
+                        {
+                          "text": "[10:00:19] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
                         },
                         {
                           "text": "✅ Map interaction confirmed via zoom\n"
@@ -429,7 +1884,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:05.777Z",
+                      "startTime": "2025-07-10T10:00:18.271Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -455,15 +1910,19 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4530,
+                      "duration": 538,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "[10:00:19] [INFO] ℹ️  Map is ready for interactions \n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:05.757Z",
+                      "startTime": "2025-07-10T10:00:19.237Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -473,7 +1932,7 @@
               ],
               "id": "86e5fa077c38973b61ed-a3448723f4b8ef64297a",
               "file": "map-interactions.spec.ts",
-              "line": 58,
+              "line": 61,
               "column": 7
             },
             {
@@ -489,15 +1948,19 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2691,
+                      "duration": 475,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "[10:00:20] [INFO] ℹ️  Map is ready for interactions \n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:11.068Z",
+                      "startTime": "2025-07-10T10:00:19.778Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -507,7 +1970,7 @@
               ],
               "id": "86e5fa077c38973b61ed-7a0af560b5cc4eb01e2b",
               "file": "map-interactions.spec.ts",
-              "line": 73,
+              "line": 76,
               "column": 7
             },
             {
@@ -523,19 +1986,38 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9548,
+                      "duration": 16665,
                       "errors": [],
                       "stdout": [
                         {
+                          "text": "[10:00:20] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "[10:00:35] [INFO] ℹ️  📁 Project operation: Project created \n"
+                        },
+                        {
+                          "text": "[10:00:35] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
                           "text": "ℹ️ Point layer button disabled - skipping\n"
+                        },
+                        {
+                          "text": "[10:00:36] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:00:36] [INFO] ℹ️  🗺️  Map operation: Locate feature used \n"
                         }
                       ],
-                      "stderr": [],
+                      "stderr": [
+                        {
+                          "text": "[10:00:35] [WARN] ⚠️  Project create operation may not have completed as expected \n"
+                        }
+                      ],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:11.358Z",
+                      "startTime": "2025-07-10T10:00:20.259Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -545,7 +2027,7 @@
               ],
               "id": "86e5fa077c38973b61ed-edd65edc3650c2bf71dd",
               "file": "map-interactions.spec.ts",
-              "line": 85,
+              "line": 88,
               "column": 7
             },
             {
@@ -561,14 +2043,20 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 4,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 9521,
+                      "duration": 1648,
                       "errors": [],
                       "stdout": [
                         {
+                          "text": "[10:01:56] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
                           "text": "ℹ️ Map may have pan constraints - verifying responsiveness\n"
+                        },
+                        {
+                          "text": "[10:01:57] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
                         },
                         {
                           "text": "✅ Map interaction confirmed via zoom\n"
@@ -576,7 +2064,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:26.438Z",
+                      "startTime": "2025-07-10T10:01:55.672Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -602,15 +2090,19 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 11,
+                      "workerIndex": 7,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 6492,
+                      "duration": 1183,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "[10:01:58] [INFO] ℹ️  Map is ready for interactions \n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:30.791Z",
+                      "startTime": "2025-07-10T10:01:57.327Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -620,7 +2112,7 @@
               ],
               "id": "86e5fa077c38973b61ed-6edfd5da29e80d390773",
               "file": "map-interactions.spec.ts",
-              "line": 58,
+              "line": 61,
               "column": 7
             },
             {
@@ -636,15 +2128,19 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4227,
+                      "duration": 1068,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "[10:01:59] [INFO] ℹ️  Map is ready for interactions \n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:31.280Z",
+                      "startTime": "2025-07-10T10:01:58.515Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -654,7 +2150,7 @@
               ],
               "id": "86e5fa077c38973b61ed-7ae0e659ab3fa0fefe00",
               "file": "map-interactions.spec.ts",
-              "line": 73,
+              "line": 76,
               "column": 7
             },
             {
@@ -670,19 +2166,38 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 10793,
+                      "duration": 17387,
                       "errors": [],
                       "stdout": [
                         {
+                          "text": "[10:02:00] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "[10:02:15] [INFO] ℹ️  📁 Project operation: Project created \n"
+                        },
+                        {
+                          "text": "[10:02:16] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
                           "text": "ℹ️ Point layer button disabled - skipping\n"
+                        },
+                        {
+                          "text": "[10:02:16] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:02:16] [INFO] ℹ️  🗺️  Map operation: Locate feature used \n"
                         }
                       ],
-                      "stderr": [],
+                      "stderr": [
+                        {
+                          "text": "[10:02:15] [WARN] ⚠️  Project create operation may not have completed as expected \n"
+                        }
+                      ],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:35.513Z",
+                      "startTime": "2025-07-10T10:01:59.587Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -692,7 +2207,7 @@
               ],
               "id": "86e5fa077c38973b61ed-f2d86c46991b323452ab",
               "file": "map-interactions.spec.ts",
-              "line": 85,
+              "line": 88,
               "column": 7
             }
           ]
@@ -725,19 +2240,22 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 2873,
+                      "duration": 516,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "GIS app load time: 2476ms\n"
+                          "text": "[10:00:37] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "GIS app load time: 292ms\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:13.582Z",
+                      "startTime": "2025-07-10T10:00:36.932Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -764,18 +2282,51 @@
                   "results": [
                     {
                       "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11093,
+                      "duration": 3827,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "10 zoom operations took: 8331ms\n"
+                          "text": "[10:00:37] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "[10:00:38] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:00:38] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:00:38] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:00:39] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:00:39] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:00:39] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:00:40] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:00:40] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:00:40] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:00:40] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "10 zoom operations took: 3197ms\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:13.595Z",
+                      "startTime": "2025-07-10T10:00:37.451Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -801,19 +2352,22 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 3,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 15177,
+                      "duration": 1622,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Layer switching test took: 12386ms\n"
+                          "text": "[10:00:41] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "Layer switching test took: 1015ms\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:13.767Z",
+                      "startTime": "2025-07-10T10:00:41.292Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -839,19 +2393,22 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 5,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3408,
+                      "duration": 1153,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "GIS app load time: 2685ms\n"
+                          "text": "[10:02:18] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "GIS app load time: 627ms\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:37.160Z",
+                      "startTime": "2025-07-10T10:02:16.983Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -877,19 +2434,52 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 3,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12146,
+                      "duration": 5090,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "10 zoom operations took: 8760ms\n"
+                          "text": "[10:02:19] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "[10:02:19] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:02:19] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:02:20] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:02:20] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:02:21] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:02:21] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:02:21] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:02:22] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:02:22] [INFO] ℹ️  🗺️  Map operation: Zoom in { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'in'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "[10:02:22] [INFO] ℹ️  🗺️  Map operation: Zoom out { times: \u001b[33m1\u001b[39m, direction: \u001b[32m'out'\u001b[39m }\n"
+                        },
+                        {
+                          "text": "10 zoom operations took: 3714ms\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:38.820Z",
+                      "startTime": "2025-07-10T10:02:18.139Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -916,18 +2506,21 @@
                   "results": [
                     {
                       "workerIndex": 7,
-                      "parallelIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 16060,
+                      "duration": 4457,
                       "errors": [],
                       "stdout": [
                         {
-                          "text": "Layer switching test took: 12611ms\n"
+                          "text": "[10:02:25] [INFO] ℹ️  Map is ready for interactions \n"
+                        },
+                        {
+                          "text": "Layer switching test took: 1557ms\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-07-07T23:27:39.097Z",
+                      "startTime": "2025-07-10T10:02:23.233Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -943,1024 +2536,15 @@
           ]
         }
       ]
-    },
-    {
-      "title": "todo-edge-cases.spec.ts",
-      "file": "todo-edge-cases.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "GIS Working Tests - Interview Ready",
-          "file": "todo-edge-cases.spec.ts",
-          "line": 8,
-          "column": 6,
-          "specs": [
-            {
-              "title": "✅ should load GIS application successfully",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2970,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "🗺️ Testing GIS app loading...\n"
-                        },
-                        {
-                          "text": "✅ Page title verified\n"
-                        },
-                        {
-                          "text": "✅ Map container is visible\n"
-                        },
-                        {
-                          "text": "✅ Navigation controls verified\n"
-                        },
-                        {
-                          "text": "✅ Project management buttons found\n"
-                        },
-                        {
-                          "text": "📊 Layer tools visible - Point: true, Line: true, Polygon: true\n"
-                        },
-                        {
-                          "text": "🎉 GIS application loaded successfully!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:15.318Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-28bc6632e0a1b6fb21e4",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 16,
-              "column": 7
-            },
-            {
-              "title": "✅ should handle zoom operations perfectly",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 5115,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "🔍 Testing zoom operations...\n"
-                        },
-                        {
-                          "text": "📊 Initial zoom level: 2\n"
-                        },
-                        {
-                          "text": "🔍 After zoom in: 4\n"
-                        },
-                        {
-                          "text": "🔍 After zoom out: 3\n"
-                        },
-                        {
-                          "text": "✅ Zoom operations working perfectly!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:15.587Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-fa2cab6dc3ad2c3d4a00",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 50,
-              "column": 7
-            },
-            {
-              "title": "✅ should validate coordinates and map state",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 2692,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "📍 Testing coordinate validation and map state...\n"
-                        },
-                        {
-                          "text": "📍 Current map center: 0.0000, 0.0000\n"
-                        },
-                        {
-                          "text": "✅ Map coordinates are valid\n"
-                        },
-                        {
-                          "text": "✅ Coordinate validation helper working\n"
-                        },
-                        {
-                          "text": "✅ Map bounds are valid: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
-                        },
-                        {
-                          "text": "✅ Map bounds are geographically valid\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "❌ Invalid latitude: 91 (must be -90 to 90)\n"
-                        },
-                        {
-                          "text": "❌ Invalid longitude: 181 (must be -180 to 180)\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:16.465Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-9ca20285cc7348fbf1fb",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 71,
-              "column": 7
-            },
-            {
-              "title": "✅ should manage projects with intelligent state handling",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 4575,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "🛠️ Testing intelligent project and layer management...\n"
-                        },
-                        {
-                          "text": "📊 Initial button states: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
-                        },
-                        {
-                          "text": "📁 Creating new project to enable layer tools...\n"
-                        },
-                        {
-                          "text": "✅ New project created\n"
-                        },
-                        {
-                          "text": "📊 After project creation: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
-                        },
-                        {
-                          "text": "ℹ️ Point layer button disabled - this is normal app behavior\n"
-                        },
-                        {
-                          "text": "ℹ️ Line layer button disabled - this is normal app behavior\n"
-                        },
-                        {
-                          "text": "ℹ️ Polygon layer button disabled - this is normal app behavior\n"
-                        },
-                        {
-                          "text": "✅ Project and layer management completed successfully!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:18.293Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-dd722ead168f1fb37d06",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 94,
-              "column": 7
-            },
-            {
-              "title": "✅ should handle map interactions gracefully",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 6348,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "🗺️ Testing map interactions with fallback verification...\n"
-                        },
-                        {
-                          "text": "📍 Initial center: 0.0000, 0.0000\n"
-                        },
-                        {
-                          "text": "🖱️ Attempting map pan interaction...\n"
-                        },
-                        {
-                          "text": "📍 After interaction: 0.0000, 0.0000\n"
-                        },
-                        {
-                          "text": "📏 Coordinate changes - Lat: 0.000000, Lng: 0.000000\n"
-                        },
-                        {
-                          "text": "ℹ️ Map center unchanged - testing alternative interaction...\n"
-                        },
-                        {
-                          "text": "✅ Map responsiveness confirmed via zoom interaction\n"
-                        },
-                        {
-                          "text": "✅ Coordinates remain valid after all interactions\n"
-                        },
-                        {
-                          "text": "✅ Map interaction testing completed successfully!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:19.163Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-ad24eac501e379e777dc",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 163,
-              "column": 7
-            },
-            {
-              "title": "✅ should demonstrate mathematical precision",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2632,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "📏 Testing mathematical calculations with precision...\n"
-                        },
-                        {
-                          "text": "📏 Distance calculated: 4129.09 km\n"
-                        },
-                        {
-                          "text": "📏 San Francisco → New York:\n"
-                        },
-                        {
-                          "text": "   Distance: 4129.09 km (Transcontinental distance)\n"
-                        },
-                        {
-                          "text": "   Expected range: 4100-4200 km\n"
-                        },
-                        {
-                          "text": "   ✅ Within expected range\n"
-                        },
-                        {
-                          "text": "📏 Distance calculated: 343.56 km\n"
-                        },
-                        {
-                          "text": "📏 London → Paris:\n"
-                        },
-                        {
-                          "text": "   Distance: 343.56 km (European city pair)\n"
-                        },
-                        {
-                          "text": "   Expected range: 340-350 km\n"
-                        },
-                        {
-                          "text": "   ✅ Within expected range\n"
-                        },
-                        {
-                          "text": "📏 Distance calculated: 111.19 km\n"
-                        },
-                        {
-                          "text": "📏 Equator/Prime Meridian → 1° North:\n"
-                        },
-                        {
-                          "text": "   Distance: 111.19 km (1 degree latitude)\n"
-                        },
-                        {
-                          "text": "   Expected range: 110-112 km\n"
-                        },
-                        {
-                          "text": "   ✅ Within expected range\n"
-                        },
-                        {
-                          "text": "✅ All mathematical calculations verified with precision!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:20.709Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-c290f26191e7ee4e6cc0",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 224,
-              "column": 7
-            },
-            {
-              "title": "✅ should showcase comprehensive GIS capabilities",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 2653,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "🧰 Demonstrating comprehensive GIS helper capabilities...\n"
-                        },
-                        {
-                          "text": "📊 Current map state:\n"
-                        },
-                        {
-                          "text": "🗺️ Current Map State:\n"
-                        },
-                        {
-                          "text": "   Center: 0.0000, 0.0000\n"
-                        },
-                        {
-                          "text": "   Zoom: 2\n"
-                        },
-                        {
-                          "text": "   Bounds: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
-                        },
-                        {
-                          "text": "✅ Map is ready for interactions\n"
-                        },
-                        {
-                          "text": "✅ Map readiness confirmed\n"
-                        },
-                        {
-                          "text": "🔍 Verifying map controls...\n"
-                        },
-                        {
-                          "text": "✅ Essential map controls are present\n"
-                        },
-                        {
-                          "text": "✅ Essential map controls verified\n"
-                        },
-                        {
-                          "text": "📐 Current viewport information:\n"
-                        },
-                        {
-                          "text": "   Center: 0.0000, 0.0000\n"
-                        },
-                        {
-                          "text": "   Zoom level: 2\n"
-                        },
-                        {
-                          "text": "   Bounds: N:71.965 S:-71.965 E:145.898 W:-145.547\n"
-                        },
-                        {
-                          "text": "📍 Formatted coordinates: 37.774929, -122.419415\n"
-                        },
-                        {
-                          "text": "✅ Coordinate formatting working correctly\n"
-                        },
-                        {
-                          "text": "🧭 Bearing from San Francisco to New York: 69.9°\n"
-                        },
-                        {
-                          "text": "✅ Bearing calculation verified\n"
-                        },
-                        {
-                          "text": "✅ Center coordinate confirmed to be in current view\n"
-                        },
-                        {
-                          "text": "🔍 North Pole region in current view: false\n"
-                        },
-                        {
-                          "text": "🧪 Testing edge case coordinates:\n"
-                        },
-                        {
-                          "text": "   ✅ North Pole: (90, 0) - Valid: true\n"
-                        },
-                        {
-                          "text": "   ✅ South Pole: (-90, 0) - Valid: true\n"
-                        },
-                        {
-                          "text": "   ✅ Antimeridian: (0, 180) - Valid: true\n"
-                        },
-                        {
-                          "text": "   ✅ Beyond North Pole: (90.1, 0) - Valid: false\n"
-                        },
-                        {
-                          "text": "🎉 All comprehensive GIS capabilities demonstrated successfully!\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "❌ Invalid latitude: 90.1 (must be -90 to 90)\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:20.924Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-b6a77a27978fc5224983",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 277,
-              "column": 7
-            },
-            {
-              "title": "✅ should load GIS application successfully",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 3562,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "🗺️ Testing GIS app loading...\n"
-                        },
-                        {
-                          "text": "✅ Page title verified\n"
-                        },
-                        {
-                          "text": "✅ Map container is visible\n"
-                        },
-                        {
-                          "text": "✅ Navigation controls verified\n"
-                        },
-                        {
-                          "text": "✅ Project management buttons found\n"
-                        },
-                        {
-                          "text": "📊 Layer tools visible - Point: true, Line: true, Polygon: true\n"
-                        },
-                        {
-                          "text": "🎉 GIS application loaded successfully!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:40.212Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-9d89b18eef1d6e92d9a6",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 16,
-              "column": 7
-            },
-            {
-              "title": "✅ should handle zoom operations perfectly",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 6280,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "🔍 Testing zoom operations...\n"
-                        },
-                        {
-                          "text": "📊 Initial zoom level: 2\n"
-                        },
-                        {
-                          "text": "🔍 After zoom in: 4\n"
-                        },
-                        {
-                          "text": "🔍 After zoom out: 3\n"
-                        },
-                        {
-                          "text": "✅ Zoom operations working perfectly!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:40.588Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-07936963a2a64b8bc615",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 50,
-              "column": 7
-            },
-            {
-              "title": "✅ should validate coordinates and map state",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 3563,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "📍 Testing coordinate validation and map state...\n"
-                        },
-                        {
-                          "text": "📍 Current map center: 0.0000, 0.0000\n"
-                        },
-                        {
-                          "text": "✅ Map coordinates are valid\n"
-                        },
-                        {
-                          "text": "✅ Coordinate validation helper working\n"
-                        },
-                        {
-                          "text": "✅ Map bounds are valid: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
-                        },
-                        {
-                          "text": "✅ Map bounds are geographically valid\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "❌ Invalid latitude: 91 (must be -90 to 90)\n"
-                        },
-                        {
-                          "text": "❌ Invalid longitude: 181 (must be -180 to 180)\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:40.766Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-40f038149d48e406094a",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 71,
-              "column": 7
-            },
-            {
-              "title": "✅ should manage projects with intelligent state handling",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 5669,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "🛠️ Testing intelligent project and layer management...\n"
-                        },
-                        {
-                          "text": "📊 Initial button states: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
-                        },
-                        {
-                          "text": "📁 Creating new project to enable layer tools...\n"
-                        },
-                        {
-                          "text": "✅ New project created\n"
-                        },
-                        {
-                          "text": "📊 After project creation: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
-                        },
-                        {
-                          "text": "ℹ️ Point layer button disabled - this is normal app behavior\n"
-                        },
-                        {
-                          "text": "ℹ️ Line layer button disabled - this is normal app behavior\n"
-                        },
-                        {
-                          "text": "ℹ️ Polygon layer button disabled - this is normal app behavior\n"
-                        },
-                        {
-                          "text": "✅ Project and layer management completed successfully!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:43.782Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-2a3007e645bc02aac93f",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 94,
-              "column": 7
-            },
-            {
-              "title": "✅ should handle map interactions gracefully",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 7335,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "🗺️ Testing map interactions with fallback verification...\n"
-                        },
-                        {
-                          "text": "📍 Initial center: 0.0000, 0.0000\n"
-                        },
-                        {
-                          "text": "🖱️ Attempting map pan interaction...\n"
-                        },
-                        {
-                          "text": "📍 After interaction: 0.0000, 0.0000\n"
-                        },
-                        {
-                          "text": "📏 Coordinate changes - Lat: 0.000000, Lng: 0.000000\n"
-                        },
-                        {
-                          "text": "ℹ️ Map center unchanged - testing alternative interaction...\n"
-                        },
-                        {
-                          "text": "✅ Map responsiveness confirmed via zoom interaction\n"
-                        },
-                        {
-                          "text": "✅ Coordinates remain valid after all interactions\n"
-                        },
-                        {
-                          "text": "✅ Map interaction testing completed successfully!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:44.336Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-ef369c29d8a04bd11d7f",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 163,
-              "column": 7
-            },
-            {
-              "title": "✅ should demonstrate mathematical precision",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3237,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "📏 Testing mathematical calculations with precision...\n"
-                        },
-                        {
-                          "text": "📏 Distance calculated: 4129.09 km\n"
-                        },
-                        {
-                          "text": "📏 San Francisco → New York:\n"
-                        },
-                        {
-                          "text": "   Distance: 4129.09 km (Transcontinental distance)\n"
-                        },
-                        {
-                          "text": "   Expected range: 4100-4200 km\n"
-                        },
-                        {
-                          "text": "   ✅ Within expected range\n"
-                        },
-                        {
-                          "text": "📏 Distance calculated: 343.56 km\n"
-                        },
-                        {
-                          "text": "📏 London → Paris:\n"
-                        },
-                        {
-                          "text": "   Distance: 343.56 km (European city pair)\n"
-                        },
-                        {
-                          "text": "   Expected range: 340-350 km\n"
-                        },
-                        {
-                          "text": "   ✅ Within expected range\n"
-                        },
-                        {
-                          "text": "📏 Distance calculated: 111.19 km\n"
-                        },
-                        {
-                          "text": "📏 Equator/Prime Meridian → 1° North:\n"
-                        },
-                        {
-                          "text": "   Distance: 111.19 km (1 degree latitude)\n"
-                        },
-                        {
-                          "text": "   Expected range: 110-112 km\n"
-                        },
-                        {
-                          "text": "   ✅ Within expected range\n"
-                        },
-                        {
-                          "text": "✅ All mathematical calculations verified with precision!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:46.320Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-6d0eff495d947eba8c6b",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 224,
-              "column": 7
-            },
-            {
-              "title": "✅ should showcase comprehensive GIS capabilities",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 3390,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "🧰 Demonstrating comprehensive GIS helper capabilities...\n"
-                        },
-                        {
-                          "text": "📊 Current map state:\n"
-                        },
-                        {
-                          "text": "🗺️ Current Map State:\n"
-                        },
-                        {
-                          "text": "   Center: 0.0000, 0.0000\n"
-                        },
-                        {
-                          "text": "   Zoom: 2\n"
-                        },
-                        {
-                          "text": "   Bounds: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
-                        },
-                        {
-                          "text": "✅ Map is ready for interactions\n"
-                        },
-                        {
-                          "text": "✅ Map readiness confirmed\n"
-                        },
-                        {
-                          "text": "🔍 Verifying map controls...\n"
-                        },
-                        {
-                          "text": "✅ Essential map controls are present\n"
-                        },
-                        {
-                          "text": "✅ Essential map controls verified\n"
-                        },
-                        {
-                          "text": "📐 Current viewport information:\n"
-                        },
-                        {
-                          "text": "   Center: 0.0000, 0.0000\n"
-                        },
-                        {
-                          "text": "   Zoom level: 2\n"
-                        },
-                        {
-                          "text": "   Bounds: N:71.965 S:-71.965 E:145.898 W:-145.547\n"
-                        },
-                        {
-                          "text": "📍 Formatted coordinates: 37.774929, -122.419415\n"
-                        },
-                        {
-                          "text": "✅ Coordinate formatting working correctly\n"
-                        },
-                        {
-                          "text": "🧭 Bearing from San Francisco to New York: 69.9°\n"
-                        },
-                        {
-                          "text": "✅ Bearing calculation verified\n"
-                        },
-                        {
-                          "text": "✅ Center coordinate confirmed to be in current view\n"
-                        },
-                        {
-                          "text": "🔍 North Pole region in current view: false\n"
-                        },
-                        {
-                          "text": "🧪 Testing edge case coordinates:\n"
-                        },
-                        {
-                          "text": "   ✅ North Pole: (90, 0) - Valid: true\n"
-                        },
-                        {
-                          "text": "   ✅ South Pole: (-90, 0) - Valid: true\n"
-                        },
-                        {
-                          "text": "   ✅ Antimeridian: (0, 180) - Valid: true\n"
-                        },
-                        {
-                          "text": "   ✅ Beyond North Pole: (90.1, 0) - Valid: false\n"
-                        },
-                        {
-                          "text": "🎉 All comprehensive GIS capabilities demonstrated successfully!\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "❌ Invalid latitude: 90.1 (must be -90 to 90)\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2025-07-07T23:27:46.876Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "637f16ef45cccb3d8286-ed7a8c1b92c5ad721e0c",
-              "file": "todo-edge-cases.spec.ts",
-              "line": 277,
-              "column": 7
-            }
-          ]
-        }
-      ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-07-07T23:27:04.103Z",
-    "duration": 51572.574,
-    "expected": 36,
+    "startTime": "2025-07-10T09:59:23.472Z",
+    "duration": 186324.292,
+    "expected": 34,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }

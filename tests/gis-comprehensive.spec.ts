@@ -5,7 +5,7 @@ import { test, expect } from '@playwright/test';
 import { GISMapPage } from '../pages/gis-map-page';
 import { GISHelpers } from '../utils/gis-helpers';
 
-test.describe('GIS Working Tests - Interview Ready', () => {
+test.describe('GIS Tests', () => {
   let gisPage: GISMapPage;
 
   test.beforeEach(async ({ page }) => {
