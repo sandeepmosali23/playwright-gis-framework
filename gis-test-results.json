@@ -1,0 +1,1966 @@
+{
+  "config": {
+    "configFile": "/Users/sandeepreddy/untitled folder/demo-playwright/playwright.config.ts",
+    "rootDir": "/Users/sandeepreddy/untitled folder/demo-playwright/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 6
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      ["html", null],
+      ["list", null],
+      [
+        "json",
+        {
+          "outputFile": "gis-test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/sandeepreddy/untitled folder/demo-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/sandeepreddy/untitled folder/demo-playwright/tests",
+        "testIgnore": [],
+        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/sandeepreddy/untitled folder/demo-playwright/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 6
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/sandeepreddy/untitled folder/demo-playwright/tests",
+        "testIgnore": [],
+        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.53.2",
+    "workers": 6,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "layer-management.spec.ts",
+      "file": "layer-management.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Layer Management",
+          "file": "layer-management.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should display layer control interface",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4254,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:05.680Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d5be681a50294a7201f-ff2fa6c5f13f9720dead",
+              "file": "layer-management.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "should switch between base layers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 8487,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:05.820Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d5be681a50294a7201f-86946486dc2066088b7c",
+              "file": "layer-management.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "should toggle overlay layers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 8617,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:05.898Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d5be681a50294a7201f-c6867703ff0b46932ea1",
+              "file": "layer-management.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "should manage layer creation workflow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6432,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📁 Creating new project to enable layer creation...\n"
+                        },
+                        {
+                          "text": "📊 Layer button states after project creation: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
+                        },
+                        {
+                          "text": "ℹ️ Point layer button still disabled - skipping\n"
+                        },
+                        {
+                          "text": "ℹ️ Line layer button still disabled - skipping\n"
+                        },
+                        {
+                          "text": "ℹ️ Polygon layer button still disabled - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:05.727Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d5be681a50294a7201f-7d02a037fd2e0c0828ae",
+              "file": "layer-management.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "should display layer control interface",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5677,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:23.888Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d5be681a50294a7201f-5aead9777192db56a4a8",
+              "file": "layer-management.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "should switch between base layers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 11146,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:24.249Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d5be681a50294a7201f-42f0e771e311ec448c33",
+              "file": "layer-management.spec.ts",
+              "line": 21,
+              "column": 7
+            },
+            {
+              "title": "should toggle overlay layers",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 10462,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:24.456Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d5be681a50294a7201f-11ae0f3efca1b323d356",
+              "file": "layer-management.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "should manage layer creation workflow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 9362,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📁 Creating new project to enable layer creation...\n"
+                        },
+                        {
+                          "text": "📊 Layer button states after project creation: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
+                        },
+                        {
+                          "text": "ℹ️ Point layer button still disabled - skipping\n"
+                        },
+                        {
+                          "text": "ℹ️ Line layer button still disabled - skipping\n"
+                        },
+                        {
+                          "text": "ℹ️ Polygon layer button still disabled - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:25.582Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2d5be681a50294a7201f-1ea12f763e7ff6f3c28d",
+              "file": "layer-management.spec.ts",
+              "line": 50,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "map-interactions.spec.ts",
+      "file": "map-interactions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Map Interactions",
+          "file": "map-interactions.spec.ts",
+          "line": 5,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should pan map by dragging",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 6755,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ Map may have pan constraints - verifying responsiveness\n"
+                        },
+                        {
+                          "text": "✅ Map interaction confirmed via zoom\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:05.777Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "86e5fa077c38973b61ed-996ad1b3d0c14443385a",
+              "file": "map-interactions.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "should handle map clicks",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 4530,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:05.757Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "86e5fa077c38973b61ed-a3448723f4b8ef64297a",
+              "file": "map-interactions.spec.ts",
+              "line": 58,
+              "column": 7
+            },
+            {
+              "title": "should maintain map bounds within valid ranges",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2691,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:11.068Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "86e5fa077c38973b61ed-7a0af560b5cc4eb01e2b",
+              "file": "map-interactions.spec.ts",
+              "line": 73,
+              "column": 7
+            },
+            {
+              "title": "should handle rapid interactions without errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 9548,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ Point layer button disabled - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:11.358Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "86e5fa077c38973b61ed-edd65edc3650c2bf71dd",
+              "file": "map-interactions.spec.ts",
+              "line": 85,
+              "column": 7
+            },
+            {
+              "title": "should pan map by dragging",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 9521,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ Map may have pan constraints - verifying responsiveness\n"
+                        },
+                        {
+                          "text": "✅ Map interaction confirmed via zoom\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:26.438Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "86e5fa077c38973b61ed-bee8e967357a988ef8fd",
+              "file": "map-interactions.spec.ts",
+              "line": 13,
+              "column": 7
+            },
+            {
+              "title": "should handle map clicks",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6492,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:30.791Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "86e5fa077c38973b61ed-6edfd5da29e80d390773",
+              "file": "map-interactions.spec.ts",
+              "line": 58,
+              "column": 7
+            },
+            {
+              "title": "should maintain map bounds within valid ranges",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4227,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:31.280Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "86e5fa077c38973b61ed-7ae0e659ab3fa0fefe00",
+              "file": "map-interactions.spec.ts",
+              "line": 73,
+              "column": 7
+            },
+            {
+              "title": "should handle rapid interactions without errors",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 10793,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "ℹ️ Point layer button disabled - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:35.513Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "86e5fa077c38973b61ed-f2d86c46991b323452ab",
+              "file": "map-interactions.spec.ts",
+              "line": 85,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "performance.spec.ts",
+      "file": "performance.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "GIS Performance",
+          "file": "performance.spec.ts",
+          "line": 4,
+          "column": 6,
+          "specs": [
+            {
+              "title": "should load GIS app within acceptable time",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2873,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "GIS app load time: 2476ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:13.582Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b15d6361b2fc38288977-0bb8a912f27ad4945cff",
+              "file": "performance.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "should handle zoom operations efficiently",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 11093,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "10 zoom operations took: 8331ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:13.595Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b15d6361b2fc38288977-171477b2d5db787cafba",
+              "file": "performance.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "should handle layer switching performance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 15177,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Layer switching test took: 12386ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:13.767Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b15d6361b2fc38288977-11780914f2fabe55ff9d",
+              "file": "performance.spec.ts",
+              "line": 41,
+              "column": 7
+            },
+            {
+              "title": "should load GIS app within acceptable time",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 3408,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "GIS app load time: 2685ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:37.160Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b15d6361b2fc38288977-6ad1d5d4e85e6292ed82",
+              "file": "performance.spec.ts",
+              "line": 5,
+              "column": 7
+            },
+            {
+              "title": "should handle zoom operations efficiently",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 12146,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "10 zoom operations took: 8760ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:38.820Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b15d6361b2fc38288977-4b34cad57a20d173a557",
+              "file": "performance.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "should handle layer switching performance",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 16060,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Layer switching test took: 12611ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:39.097Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b15d6361b2fc38288977-53edd91e36988f7fa5af",
+              "file": "performance.spec.ts",
+              "line": 41,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "todo-edge-cases.spec.ts",
+      "file": "todo-edge-cases.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "GIS Working Tests - Interview Ready",
+          "file": "todo-edge-cases.spec.ts",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "✅ should load GIS application successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2970,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🗺️ Testing GIS app loading...\n"
+                        },
+                        {
+                          "text": "✅ Page title verified\n"
+                        },
+                        {
+                          "text": "✅ Map container is visible\n"
+                        },
+                        {
+                          "text": "✅ Navigation controls verified\n"
+                        },
+                        {
+                          "text": "✅ Project management buttons found\n"
+                        },
+                        {
+                          "text": "📊 Layer tools visible - Point: true, Line: true, Polygon: true\n"
+                        },
+                        {
+                          "text": "🎉 GIS application loaded successfully!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:15.318Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-28bc6632e0a1b6fb21e4",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "✅ should handle zoom operations perfectly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5115,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔍 Testing zoom operations...\n"
+                        },
+                        {
+                          "text": "📊 Initial zoom level: 2\n"
+                        },
+                        {
+                          "text": "🔍 After zoom in: 4\n"
+                        },
+                        {
+                          "text": "🔍 After zoom out: 3\n"
+                        },
+                        {
+                          "text": "✅ Zoom operations working perfectly!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:15.587Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-fa2cab6dc3ad2c3d4a00",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "✅ should validate coordinates and map state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 2692,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📍 Testing coordinate validation and map state...\n"
+                        },
+                        {
+                          "text": "📍 Current map center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "✅ Map coordinates are valid\n"
+                        },
+                        {
+                          "text": "✅ Coordinate validation helper working\n"
+                        },
+                        {
+                          "text": "✅ Map bounds are valid: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
+                        },
+                        {
+                          "text": "✅ Map bounds are geographically valid\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "❌ Invalid latitude: 91 (must be -90 to 90)\n"
+                        },
+                        {
+                          "text": "❌ Invalid longitude: 181 (must be -180 to 180)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:16.465Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-9ca20285cc7348fbf1fb",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "✅ should manage projects with intelligent state handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4575,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🛠️ Testing intelligent project and layer management...\n"
+                        },
+                        {
+                          "text": "📊 Initial button states: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
+                        },
+                        {
+                          "text": "📁 Creating new project to enable layer tools...\n"
+                        },
+                        {
+                          "text": "✅ New project created\n"
+                        },
+                        {
+                          "text": "📊 After project creation: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
+                        },
+                        {
+                          "text": "ℹ️ Point layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "ℹ️ Line layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "ℹ️ Polygon layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "✅ Project and layer management completed successfully!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:18.293Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-dd722ead168f1fb37d06",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 94,
+              "column": 7
+            },
+            {
+              "title": "✅ should handle map interactions gracefully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 6348,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🗺️ Testing map interactions with fallback verification...\n"
+                        },
+                        {
+                          "text": "📍 Initial center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "🖱️ Attempting map pan interaction...\n"
+                        },
+                        {
+                          "text": "📍 After interaction: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "📏 Coordinate changes - Lat: 0.000000, Lng: 0.000000\n"
+                        },
+                        {
+                          "text": "ℹ️ Map center unchanged - testing alternative interaction...\n"
+                        },
+                        {
+                          "text": "✅ Map responsiveness confirmed via zoom interaction\n"
+                        },
+                        {
+                          "text": "✅ Coordinates remain valid after all interactions\n"
+                        },
+                        {
+                          "text": "✅ Map interaction testing completed successfully!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:19.163Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-ad24eac501e379e777dc",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 163,
+              "column": 7
+            },
+            {
+              "title": "✅ should demonstrate mathematical precision",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2632,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📏 Testing mathematical calculations with precision...\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 4129.09 km\n"
+                        },
+                        {
+                          "text": "📏 San Francisco → New York:\n"
+                        },
+                        {
+                          "text": "   Distance: 4129.09 km (Transcontinental distance)\n"
+                        },
+                        {
+                          "text": "   Expected range: 4100-4200 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 343.56 km\n"
+                        },
+                        {
+                          "text": "📏 London → Paris:\n"
+                        },
+                        {
+                          "text": "   Distance: 343.56 km (European city pair)\n"
+                        },
+                        {
+                          "text": "   Expected range: 340-350 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 111.19 km\n"
+                        },
+                        {
+                          "text": "📏 Equator/Prime Meridian → 1° North:\n"
+                        },
+                        {
+                          "text": "   Distance: 111.19 km (1 degree latitude)\n"
+                        },
+                        {
+                          "text": "   Expected range: 110-112 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "✅ All mathematical calculations verified with precision!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:20.709Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-c290f26191e7ee4e6cc0",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 224,
+              "column": 7
+            },
+            {
+              "title": "✅ should showcase comprehensive GIS capabilities",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 2653,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🧰 Demonstrating comprehensive GIS helper capabilities...\n"
+                        },
+                        {
+                          "text": "📊 Current map state:\n"
+                        },
+                        {
+                          "text": "🗺️ Current Map State:\n"
+                        },
+                        {
+                          "text": "   Center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "   Zoom: 2\n"
+                        },
+                        {
+                          "text": "   Bounds: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
+                        },
+                        {
+                          "text": "✅ Map is ready for interactions\n"
+                        },
+                        {
+                          "text": "✅ Map readiness confirmed\n"
+                        },
+                        {
+                          "text": "🔍 Verifying map controls...\n"
+                        },
+                        {
+                          "text": "✅ Essential map controls are present\n"
+                        },
+                        {
+                          "text": "✅ Essential map controls verified\n"
+                        },
+                        {
+                          "text": "📐 Current viewport information:\n"
+                        },
+                        {
+                          "text": "   Center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "   Zoom level: 2\n"
+                        },
+                        {
+                          "text": "   Bounds: N:71.965 S:-71.965 E:145.898 W:-145.547\n"
+                        },
+                        {
+                          "text": "📍 Formatted coordinates: 37.774929, -122.419415\n"
+                        },
+                        {
+                          "text": "✅ Coordinate formatting working correctly\n"
+                        },
+                        {
+                          "text": "🧭 Bearing from San Francisco to New York: 69.9°\n"
+                        },
+                        {
+                          "text": "✅ Bearing calculation verified\n"
+                        },
+                        {
+                          "text": "✅ Center coordinate confirmed to be in current view\n"
+                        },
+                        {
+                          "text": "🔍 North Pole region in current view: false\n"
+                        },
+                        {
+                          "text": "🧪 Testing edge case coordinates:\n"
+                        },
+                        {
+                          "text": "   ✅ North Pole: (90, 0) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ South Pole: (-90, 0) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ Antimeridian: (0, 180) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ Beyond North Pole: (90.1, 0) - Valid: false\n"
+                        },
+                        {
+                          "text": "🎉 All comprehensive GIS capabilities demonstrated successfully!\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "❌ Invalid latitude: 90.1 (must be -90 to 90)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:20.924Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-b6a77a27978fc5224983",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 277,
+              "column": 7
+            },
+            {
+              "title": "✅ should load GIS application successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3562,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🗺️ Testing GIS app loading...\n"
+                        },
+                        {
+                          "text": "✅ Page title verified\n"
+                        },
+                        {
+                          "text": "✅ Map container is visible\n"
+                        },
+                        {
+                          "text": "✅ Navigation controls verified\n"
+                        },
+                        {
+                          "text": "✅ Project management buttons found\n"
+                        },
+                        {
+                          "text": "📊 Layer tools visible - Point: true, Line: true, Polygon: true\n"
+                        },
+                        {
+                          "text": "🎉 GIS application loaded successfully!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:40.212Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-9d89b18eef1d6e92d9a6",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 16,
+              "column": 7
+            },
+            {
+              "title": "✅ should handle zoom operations perfectly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 6280,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🔍 Testing zoom operations...\n"
+                        },
+                        {
+                          "text": "📊 Initial zoom level: 2\n"
+                        },
+                        {
+                          "text": "🔍 After zoom in: 4\n"
+                        },
+                        {
+                          "text": "🔍 After zoom out: 3\n"
+                        },
+                        {
+                          "text": "✅ Zoom operations working perfectly!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:40.588Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-07936963a2a64b8bc615",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 50,
+              "column": 7
+            },
+            {
+              "title": "✅ should validate coordinates and map state",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 3563,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📍 Testing coordinate validation and map state...\n"
+                        },
+                        {
+                          "text": "📍 Current map center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "✅ Map coordinates are valid\n"
+                        },
+                        {
+                          "text": "✅ Coordinate validation helper working\n"
+                        },
+                        {
+                          "text": "✅ Map bounds are valid: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
+                        },
+                        {
+                          "text": "✅ Map bounds are geographically valid\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "❌ Invalid latitude: 91 (must be -90 to 90)\n"
+                        },
+                        {
+                          "text": "❌ Invalid longitude: 181 (must be -180 to 180)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:40.766Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-40f038149d48e406094a",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 71,
+              "column": 7
+            },
+            {
+              "title": "✅ should manage projects with intelligent state handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5669,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🛠️ Testing intelligent project and layer management...\n"
+                        },
+                        {
+                          "text": "📊 Initial button states: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
+                        },
+                        {
+                          "text": "📁 Creating new project to enable layer tools...\n"
+                        },
+                        {
+                          "text": "✅ New project created\n"
+                        },
+                        {
+                          "text": "📊 After project creation: { point: \u001b[33mfalse\u001b[39m, line: \u001b[33mfalse\u001b[39m, polygon: \u001b[33mfalse\u001b[39m }\n"
+                        },
+                        {
+                          "text": "ℹ️ Point layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "ℹ️ Line layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "ℹ️ Polygon layer button disabled - this is normal app behavior\n"
+                        },
+                        {
+                          "text": "✅ Project and layer management completed successfully!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:43.782Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-2a3007e645bc02aac93f",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 94,
+              "column": 7
+            },
+            {
+              "title": "✅ should handle map interactions gracefully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 4,
+                      "status": "passed",
+                      "duration": 7335,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🗺️ Testing map interactions with fallback verification...\n"
+                        },
+                        {
+                          "text": "📍 Initial center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "🖱️ Attempting map pan interaction...\n"
+                        },
+                        {
+                          "text": "📍 After interaction: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "📏 Coordinate changes - Lat: 0.000000, Lng: 0.000000\n"
+                        },
+                        {
+                          "text": "ℹ️ Map center unchanged - testing alternative interaction...\n"
+                        },
+                        {
+                          "text": "✅ Map responsiveness confirmed via zoom interaction\n"
+                        },
+                        {
+                          "text": "✅ Coordinates remain valid after all interactions\n"
+                        },
+                        {
+                          "text": "✅ Map interaction testing completed successfully!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:44.336Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-ef369c29d8a04bd11d7f",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 163,
+              "column": 7
+            },
+            {
+              "title": "✅ should demonstrate mathematical precision",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 3237,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "📏 Testing mathematical calculations with precision...\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 4129.09 km\n"
+                        },
+                        {
+                          "text": "📏 San Francisco → New York:\n"
+                        },
+                        {
+                          "text": "   Distance: 4129.09 km (Transcontinental distance)\n"
+                        },
+                        {
+                          "text": "   Expected range: 4100-4200 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 343.56 km\n"
+                        },
+                        {
+                          "text": "📏 London → Paris:\n"
+                        },
+                        {
+                          "text": "   Distance: 343.56 km (European city pair)\n"
+                        },
+                        {
+                          "text": "   Expected range: 340-350 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "📏 Distance calculated: 111.19 km\n"
+                        },
+                        {
+                          "text": "📏 Equator/Prime Meridian → 1° North:\n"
+                        },
+                        {
+                          "text": "   Distance: 111.19 km (1 degree latitude)\n"
+                        },
+                        {
+                          "text": "   Expected range: 110-112 km\n"
+                        },
+                        {
+                          "text": "   ✅ Within expected range\n"
+                        },
+                        {
+                          "text": "✅ All mathematical calculations verified with precision!\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:46.320Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-6d0eff495d947eba8c6b",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 224,
+              "column": 7
+            },
+            {
+              "title": "✅ should showcase comprehensive GIS capabilities",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 5,
+                      "status": "passed",
+                      "duration": 3390,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "🧰 Demonstrating comprehensive GIS helper capabilities...\n"
+                        },
+                        {
+                          "text": "📊 Current map state:\n"
+                        },
+                        {
+                          "text": "🗺️ Current Map State:\n"
+                        },
+                        {
+                          "text": "   Center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "   Zoom: 2\n"
+                        },
+                        {
+                          "text": "   Bounds: N:71.97 S:-71.97 E:145.90 W:-145.55\n"
+                        },
+                        {
+                          "text": "✅ Map is ready for interactions\n"
+                        },
+                        {
+                          "text": "✅ Map readiness confirmed\n"
+                        },
+                        {
+                          "text": "🔍 Verifying map controls...\n"
+                        },
+                        {
+                          "text": "✅ Essential map controls are present\n"
+                        },
+                        {
+                          "text": "✅ Essential map controls verified\n"
+                        },
+                        {
+                          "text": "📐 Current viewport information:\n"
+                        },
+                        {
+                          "text": "   Center: 0.0000, 0.0000\n"
+                        },
+                        {
+                          "text": "   Zoom level: 2\n"
+                        },
+                        {
+                          "text": "   Bounds: N:71.965 S:-71.965 E:145.898 W:-145.547\n"
+                        },
+                        {
+                          "text": "📍 Formatted coordinates: 37.774929, -122.419415\n"
+                        },
+                        {
+                          "text": "✅ Coordinate formatting working correctly\n"
+                        },
+                        {
+                          "text": "🧭 Bearing from San Francisco to New York: 69.9°\n"
+                        },
+                        {
+                          "text": "✅ Bearing calculation verified\n"
+                        },
+                        {
+                          "text": "✅ Center coordinate confirmed to be in current view\n"
+                        },
+                        {
+                          "text": "🔍 North Pole region in current view: false\n"
+                        },
+                        {
+                          "text": "🧪 Testing edge case coordinates:\n"
+                        },
+                        {
+                          "text": "   ✅ North Pole: (90, 0) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ South Pole: (-90, 0) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ Antimeridian: (0, 180) - Valid: true\n"
+                        },
+                        {
+                          "text": "   ✅ Beyond North Pole: (90.1, 0) - Valid: false\n"
+                        },
+                        {
+                          "text": "🎉 All comprehensive GIS capabilities demonstrated successfully!\n"
+                        }
+                      ],
+                      "stderr": [
+                        {
+                          "text": "❌ Invalid latitude: 90.1 (must be -90 to 90)\n"
+                        }
+                      ],
+                      "retry": 0,
+                      "startTime": "2025-07-07T23:27:46.876Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "637f16ef45cccb3d8286-ed7a8c1b92c5ad721e0c",
+              "file": "todo-edge-cases.spec.ts",
+              "line": 277,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-07-07T23:27:04.103Z",
+    "duration": 51572.574,
+    "expected": 36,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

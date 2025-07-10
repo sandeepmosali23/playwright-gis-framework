@@ -1,0 +1,49 @@
+{
+  "name": "playwright-gis-framework",
+  "version": "2.0.0",
+  "description": "Enterprise-grade Playwright test automation framework for GIS web applications",
+  "keywords": [
+    "playwright",
+    "gis",
+    "leaflet",
+    "testing",
+    "automation",
+    "geospatial",
+    "maps"
+  ],
+  "author": "GIS Test Automation Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/playwright-gis-framework.git"
+  },
+  "bugs": {
+    "url": "https://github.com/your-org/playwright-gis-framework/issues"
+  },
+  "homepage": "https://github.com/your-org/playwright-gis-framework#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:layer": "playwright test --grep \"Layer Management\"",
+    "test:performance": "playwright test --grep \"Performance\"",
+    "test:comprehensive": "playwright test tests/gis-comprehensive.spec.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clean": "rm -rf test-results playwright-report",
+    "install:browsers": "npx playwright install",
+    "setup": "npm install && npm run install:browsers && cp .env.example .env"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "dotenv": "^17.1.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.0.0"
+  }
+}
